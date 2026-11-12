@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqlite-affinity-witness"
+version = "0.1.0a1"
+description = "FR: Rejouer les conversions implicites des comparaisons SQL | EN: Replay implicit SQL comparison conversions | ES: Reproducir conversiones implícitas de comparaciones SQL"
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+sqlite-affinity-witness = "sqlite_affinity_witness.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["sqlite_affinity_witness*"]
